@@ -62,10 +62,14 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => env('AUTH_MODEL', App\Models\Utilisateur::class), // Assurez-vous que c'est bien le bon chemin vers votre modèle Utilisateur
+            'model' => env('AUTH_MODEL', App\Models\User::class),
         ],
+
+        // 'users' => [
+        //     'driver' => 'database',
+        //     'table' => 'users',
+        // ],
     ],
-    
 
     /*
     |--------------------------------------------------------------------------
